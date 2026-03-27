@@ -22,7 +22,7 @@ export const data = {
     {
       degree: "Pre-University Course (PUC) — Science",
       institution: "PACE PU College",
-      location: "Evarachathnahalli, Shivamogga, Karnataka 577216",
+      location: "Tavarechathnahalli, Shivamogga, Karnataka 577216",
       period: "",
       detail: "PCMB",
     },
