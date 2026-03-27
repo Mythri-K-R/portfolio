@@ -10,6 +10,13 @@ import { data } from "../data";
 import "./Hero.css";
 
 export default function Hero() {
+  const baseUrl = import.meta.env.BASE_URL;
+  const profileImageUrl = `${baseUrl}profile.jpeg`;
+  const resumePath = (data.resume || "resume.pdf").replace(/^\/+/, "");
+  const resumeHref = data.resume?.startsWith("http")
+    ? data.resume
+    : `${baseUrl}${resumePath}`;
+
   return (
     <section className="hero" id="about">
       <div className="hero__bg-grid" />
@@ -50,11 +57,7 @@ export default function Hero() {
             <a href="#projects" className="btn btn-primary">
               View Projects
             </a>
-            <a
-              href={data.resume || "/resume.pdf"}
-              download
-              className="btn btn-outline"
-            >
+            <a href={resumeHref} download className="btn btn-outline">
               <Download size={15} /> Download Resume
             </a>
             <a href="#contact" className="btn btn-outline">
@@ -100,7 +103,7 @@ export default function Hero() {
         >
           <div className="hero__avatar-ring">
             <img
-              src="/profile.jpeg"
+              src={profileImageUrl}
               alt={`${data.name} profile`}
               className="hero__avatar-photo"
             />

@@ -199,7 +199,6 @@ export const data = {
       title: "Top Performer",
       detail: "Mini-Anveshana 2024 & 2025 — Idea Presentation",
     },
-    { title: "Top 10", detail: "Innovate-a-thon 2025" },
     { title: "Top 5", detail: "Ideastorm 2025" },
     {
       title: "Participant",
@@ -209,7 +208,8 @@ export const data = {
   ],
 
   certifications: [
-    { name: "Introduction to Artificial Intelligence", issuer: "Infosys" },
+    { name: "Python for Data Science", issuer: "NPTEL" },
+    { name: "Introduction to Machine Learning", issuer: "NPTEL" },
     { name: "Introduction to Python", issuer: "Infosys" },
     { name: "Web Technologies", issuer: "Study Comrade" },
   ],

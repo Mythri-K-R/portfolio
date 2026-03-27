@@ -36,6 +36,10 @@
   transition: var(--transition);
 }
 
+.achievement-item__content {
+  flex: 1;
+}
+
 .achievement-item:hover {
   border-color: var(--accent-mid);
   box-shadow: 0 4px 16px rgba(26,60,110,0.08);
@@ -78,10 +82,32 @@
   line-height: 1.5;
 }
 
+.achievement-item__media {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 0.35rem;
+}
+
+.achievement-item__view {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.18rem 0.55rem;
+  transition: var(--transition);
+}
+
+.achievement-item__view:hover {
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+
 /* Certifications */
 .cert-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   padding: 1rem 1.25rem;
   background: var(--white);
@@ -118,9 +144,35 @@
   margin-bottom: 0.1rem;
 }
 
+.cert-item__content {
+  flex: 1;
+}
+
 .cert-item__issuer {
   font-size: 0.75rem;
   color: var(--ink-4);
+}
+
+.cert-item__media {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 0.35rem;
+}
+
+.cert-item__view {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.18rem 0.55rem;
+  transition: var(--transition);
+}
+
+.cert-item__view:hover {
+  border-color: var(--accent);
+  background: var(--accent-light);
 }
 
 /* Interests */
@@ -150,4 +202,19 @@
 
 @media (max-width: 768px) {
   .achievements__layout { grid-template-columns: 1fr; gap: 2rem; }
+}
+
+@media (max-width: 520px) {
+  .achievement-item,
+  .cert-item {
+    flex-wrap: wrap;
+  }
+
+  .achievement-item__media,
+  .cert-item__media {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
