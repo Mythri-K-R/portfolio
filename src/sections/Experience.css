@@ -1,0 +1,121 @@
+.exp-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  background: var(--white);
+  max-width: 800px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  transition: var(--transition);
+}
+
+.exp-card:hover {
+  border-color: var(--accent-mid);
+  box-shadow: 0 6px 28px rgba(26,60,110,0.1);
+}
+
+.exp-card__header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.exp-card__icon {
+  width: 48px;
+  height: 48px;
+  background: var(--accent-light);
+  color: var(--accent);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.exp-card__title-block { flex: 1; }
+
+.exp-card__role {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+
+.exp-card__company {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent-mid);
+}
+
+.exp-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  color: var(--ink-3);
+  align-items: flex-end;
+  white-space: nowrap;
+}
+
+.exp-card__meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.exp-card__bullets {
+  list-style: none;
+  margin-bottom: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.exp-card__bullets li {
+  font-size: 0.92rem;
+  color: var(--ink-2);
+  padding-left: 1.25rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.exp-card__bullets li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--accent-mid);
+}
+
+.exp-card__clients-label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-4);
+  margin-bottom: 0.75rem;
+}
+
+.exp-card__client-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.exp-card__client {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--accent);
+  font-weight: 500;
+  transition: var(--transition);
+  width: fit-content;
+}
+
+.exp-card__client:hover { color: var(--accent-mid); gap: 0.7rem; }
+
+@media (max-width: 600px) {
+  .exp-card { padding: 1.5rem; }
+  .exp-card__meta { align-items: flex-start; margin-top: 0.5rem; }
+}
