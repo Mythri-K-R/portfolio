@@ -35,7 +35,7 @@ export default function Navbar() {
           className="navbar__logo"
           onClick={() => handleClick("#about")}
         >
-          MKR
+          Mythri
         </a>
 
         <ul className="navbar__links">
