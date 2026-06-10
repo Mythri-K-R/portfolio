@@ -1,6 +1,6 @@
 export const data = {
   name: "Mythri K R",
-  title: "AI & Data Science Student · Full-Stack Developer",
+  title: "BE Graduate — AI & Data Science · Full-Stack Developer",
   tagline:
     "Building real-world applications at the intersection of AI, data, and modern web development.",
   email: "mythrikr88@gmail.com",
@@ -16,7 +16,7 @@ export const data = {
         "Bachelor of Engineering — Artificial Intelligence & Data Science",
       institution: "SDM Institute of Technology",
       location: "Ujire, Dakshina Kannada",
-      period: "2022 — Present",
+      period: "2022 — 2026",
       detail: "CGPA: 8.12",
     },
     {
